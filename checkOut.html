@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/checkOut.css">
+    <title>Document</title>
+  </head>
+  <body>
+
+    <div class="signIn">
+      <div class="signIn_header">
+          <div class="signIn_header_logo">
+              <a href="https://shopee.vn/">
+                  <img src="/Code shopee/frontend/assets/img/logo2.png" alt="">
+              </a>
+              <div class="signIn_header_teXt">Đơn hàng</div>
+          </div>
+          <div class="signIn_header_help">
+              <a href="https://help.shopee.vn/vn/s/">Cần trợ giúp ?</a>
+          </div>
+      </div>
+
+      <div class="container">
+        <h4 class="mb-3">Thông tin khách hàng</h4>
+        <form novalidate>
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="firstName" class="form-label">Họ</label>
+                    <input id="firstName" type="text" class="form-control" placeholder="Nguyễn">
+                    <div class="invalid-feedback">Valid first name is require</div>
+                </div>
+                <div class="col-sm-6">
+                    <label for="lastName" class="form-label">Tên</label>
+                    <input id="lastName" type="text" class="form-control" placeholder="Văn A">
+                    <div class="invalid-feedback">Valid last name is require</div>
+                </div>
+                <div class="col-sm-6">
+                  <label for="Phone Number" class="form-label">Số Điện Thoại</label>
+                  <input id="Phone Number" type="text" class="form-control" placeholder="Nhập số điện thoại">
+                  <div class="invalid-feedback">Valid Phone Number is require</div>
+              </div>
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Email</label>
+                <input id="Email" type="text" class="form-control" placeholder="abc@def.com">
+                <div class="invalid-feedback">Valid Email is require</div>
+            </div>
+                <div class="col-md-6">
+                    <label for="province" class="form-label">Tỉnh/Thành Phố</label>
+                    <select id="province" type="text" class="form-control">
+                        <option value="">Tỉnh/Thành Phố</option>
+                        <option value="Hà Nội">Hà Nội</option>
+                        <option value="TP Hồ Chí Minh">TP Hồ Chí Minh</option>
+                        <option value="Quảng Ninh">Quảng Ninh</option>
+                        <option value="Hải Phòng">Hải Phòng</option>
+                        <option value="Nghệ An">Nghệ An</option>
+                        <option value="Cần Thơ">Cần Thơ</option>
+                    </select>
+                    <div class="invalid-feedback">Valid province is require</div>
+                </div>
+                <div class="col-md-6">
+                    <label for="place" class="form-label">Địa chỉ cụ thể</label>
+                    <input id="place" type="text" class="form-control" placeholder="Nhà số 1, phường A, quận B, Thành Phố C">
+                    <div class="invalid-feedback">Place is require</div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <h4 class="mb-3">Đơn hàng</h4>
+            <div class="cart_info">
+              <div class="modal-body">
+                <div class="cart-row">
+                  <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                  <span class="cart-price cart-header cart-column">Giá</span>
+                  <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                </div>
+                <div class="cart-items">
+    
+                </div>
+                <div class="cart-total">
+                  <strong class="cart-total-title">Tổng Cộng:</strong>
+                  <span class="cart-total-price">0VNĐ</span>
+                </div>
+              </div>
+            </div>
+            <hr class="my-4">
+            <h4 class="mb-3">Thanh toán</h4>
+            <div class="my-3">
+                <div class="form-check">
+                  <input id="cash" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                  <label class="cash" for="credit">Tiền mặt</label>
+                </div>
+                <div class="form-check">
+                  <input id="banking" name="paymentMethod" type="radio" class="form-check-input" required>
+                  <label class="banking" for="debit">Chuyển khoản</label>
+                </div>
+            </div>
+            <hr class="my-4">
+            <button class="btn btn-primary btn-lg btn-block">Hoàn thành</button>
+            </div>
+
+        </form>
+    </div>
+    
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+.signIn_header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.signIn_header_logo {
+    display: flex;
+    margin-left: 200px;
+}
+
+.signIn_header_logo>a>img {
+    width: 180px;
+    height: 58px;
+}
+
+.signIn_header_help {
+    margin-left: auto;
+    margin-right: 100px
+}
+
+.signIn_header_help>a {
+    text-decoration: none;
+    color: orangered;
+    font-size: 20px;
+}
+
+.signIn_header_teXt {
+    columns: black;
+    font-size: 30px;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.signIn_bottom {
+    margin-top: 30px;
+    width: 100%;
+    height: 700px;
+    background-color: rgb(238, 77, 45);
+    background-size: cover;
+    display: flex;
+}
+
+.signIn_bottom_background {
+    width: 900px;
+    height: 600px;
+    margin-left: 200px;
+}
+
+.signIn_bottom_info {
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    margin-top: 50px;
+}
+
+.signIn_bottom_info_header {
+    width: 100%;
+    padding: 1.375rem 1.875rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.signIn_bottom_info_header_text {
+    max-width: 8.5rem;
+    font-size: 1.4rem;
+    color: #222;
+    text-transform: capitalize;
+}
+
+.signIn_bottom_info_bottom {
+    width: 100%;
+    height:350px;
+}
+
+.signIn_bottom_info_bottom_user {
+    width:400px;
+    height: 45px;
+    margin-left: 45px;
+    margin-top: 40px;
+}
+
+.signIn_bottom_info_bottom_other {
+    text-decoration: none;
+    color: blue;
+}
+
+.signIn_bottom_info_bottom_other {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.signIn_bottom_info_footer_socials {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.signIn_bottom_info_footer_socials>span>a {
+    text-decoration: none;
+}
+
+.signIn_bottom_info_footer_socials>span {
+    display: flex;
+    justify-content: center;
+    width: 2.45rem;
+    height: 2.45rem;
+    border-radius: 1px;
+    flex: 1;
+    margin: .3125rem
+}
+
+.signIn_bottom_info_footer_socials>span>a>img {
+    width: 1.375rem;
+    height: 1.375rem;
+}
+
+.signIn_bottom_info_footer_signUp {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Kí</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="signIn">
+        <div class="signIn_header">
+            <div class="signIn_header_logo">
+                <a href="https://shopee.vn/">
+                    <img src="/Code shopee/frontend/assets/img/logo1.png" alt="">
+                </a>
+                <div class="signIn_header_teXt">Đăng Ký</div>
+            </div>
+            <div class="signIn_header_help">
+                <a href="https://help.shopee.vn/vn/s/">Cần trợ giúp ?</a>
+            </div>
+        </div>
+        <div class="signIn_bottom">
+            <div class="signIn_bottom_background">
+                <img src="assets\img/background.png" alt="">
+            </div>
+            <div class="signIn_bottom_info">
+                <div class="signIn_bottom_info_header">
+                    <div class="signIn_bottom_info_header_text">
+                        Đăng Ký
+                    </div>
+                </div>
+                <!-- <div class="signIn_bottom_info_bottom">
+                    <div class="signIn_bottom_info_bottom_group">
+                        <div class="signIn_bottom_info_bottom_form">
+                            <input type="text" id="sign_In" class="signIn_bottom_info_bottom_user" placeholder="Email/Số Điện Thoại" action = "https://sheetdb.io/api/v1/8cviwkjcv9avf" method="POST">
+                        </div>
+                        <div class="signIn_bottom_info_bottom_form">
+                            <input id="password" type="password" class="signIn_bottom_info_bottom_user" placeholder="Mật khẩu">
+                        </div>
+                        <div class="signIn_bottom_info_bottom_form">
+                            <button id="sign_In_Button" class="signIn_bottom_info_bottom_user" class="12345" style="background-color:#EE4D2D;">Đăng Kí</button>
+
+                </div> -->
+ 
+
+                <form action="https://sheetdb.io/api/v1/8cviwkjcv9avf" method="POST" id="sheetdb-form">
+                    <input name="data[user_name]" class="signIn_bottom_info_bottom_user" placeholder="Email/Số Điện Thoại">
+                    <input name="data[password]" class="signIn_bottom_info_bottom_user" placeholder="Mật khẩu">
+                    <button type="submit" class="signIn_bottom_info_bottom_user" class="12345" style="background-color:#EE4D2D;">Đăng Kí</button>
+                  </form>
+                  
+                  <script>
+                    var form = document.getElementById('sheetdb-form');
+                    form.addEventListener("submit", e => {
+                      e.preventDefault();
+                      fetch(form.action, {
+                          method : "POST",
+                          body: new FormData(document.getElementById("sheetdb-form")),
+                      }).then(
+                          response => response.json()
+                      ).then((html) => {
+                        // you can put any JS code here
+                        alert('success')
+                      });
+                    });
+                  </script>
+
+
+
+
+
+                <h3 style="display:flex;justify-content: center;color: silver;">-------------------- HOẶC --------------------</h3>
+                <div class="signIn_bottom_info_footer">
+                    <div class="signIn_bottom_info_footer_socials">
+                            <span style="background-color: #1877f2;">
+                                <a href="" class="btn_withicon" style="color: #fff">
+                                    <img src="assets\img/facebook-brands.svg" alt="" style="margin-top: 5px;">
+                                    FACEBOOK
+                                </a>
+                            </span>
+                            <span style="background-color: #4285f4;">
+                                <a href="" class="btn_withicon" style="color: #fff">
+                                    <img src="assets\img/google.png" alt="" style="margin-top: 5px;">
+                                    GOOGLE
+                                </a>
+                            </span>
+                            <span style="background-color: #000;">
+                                <a href="" class="btn_withicon" style="color: #fff">
+                                    <img src="assets\img/apple-emblem.jpg" alt="" style="margin-top: 5px;">
+                                    APPLE
+                                </a>
+                            </span>
+                    </div>
+                    
+                    <div>
+                        <p class="terms_and_condition1">Bằng việc đăng kí, bạn đã đồng ý với Shopee về</p>
+                        <a href="https://shopee.vn/legaldoc/termsOfService/?__classic__=1" class="terms_and_condition2">Điều khoản dịch vụ</a>
+                        &
+                        <a href="https://shopee.vn/legaldoc/termsOfService/?__classic__=1">Chính sách bảo mật</a>
+                    </div>
+                    <div class="signIn_bottom_info_footer_signUp">
+                        Bạn đã có tài khoản?
+                        <a href="" class="signIn_bottom_info_footer_linkSignUp" style="text-decoration: none;color: orange;">
+                            Đăng Nhập
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="signup.js"></script>
+</body>
+</html>
