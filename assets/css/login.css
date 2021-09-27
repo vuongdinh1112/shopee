@@ -33,18 +33,18 @@
 }
 
 .signIn_bottom {
-    margin-top: 30px;
+    /* margin-top: 30px; */
     width: 100%;
-    height: 700px;
+    /* height: 700px; */
     background-color: rgb(238, 77, 45);
     background-size: cover;
     display: flex;
 }
 
 .signIn_bottom_background {
-    width: 900px;
-    height: 600px;
-    margin-left: 200px;
+    width: 100vw;
+    /* height: 600px; */
+    /* margin-left: 200px; */
 }
 
 .signIn_bottom_info {
