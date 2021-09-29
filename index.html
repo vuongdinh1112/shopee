@@ -505,7 +505,13 @@
 				<span class="home-product-item__sale-off-label">GIẢM</span>
 			</div>
 		</a>
-		<button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+		<button id ="1" type="button" class="btn btn-cart id_product" onclick="click1()" >Thêm Vào Giỏ
+			<script>
+				localStorage.setItem("id","1");
+				document.getElementsByClassName("id_product").innerHTML = localStorage.getItem("id");
+			</script>
+		</button>
+		
 	</div>
 			  
 
@@ -1208,5 +1214,6 @@
 
 
     <script src = "/assets/js/index.js"> </script>
+	<script src="/assets/js/checkOut.js"></script>
 	</body>
 	</html>
