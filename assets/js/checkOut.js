@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let list_items=[];
     fetch("https://sheetdb.io/api/v1/iv1aoqer4kare")
     .then(response => response.json())
@@ -27,3 +28,9 @@ addButton.addEventListener("click", ()=>{
         // document.getElementById("price").innerText = a["price"];
 }})
 ;
+=======
+console.log("hello world");
+console.log("hello checkout");
+console.log("hello duc");
+console.log("test")
+>>>>>>> 6479c36c60cc1029536567dc8fb22fe75d4892ec
