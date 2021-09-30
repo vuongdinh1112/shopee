@@ -13,7 +13,6 @@
 	<link rel="stylesheet" href="/assets/css/index.css">
 </head>
 <body>
-
             <!-- The Modal -->
             <!-- <button id="cart">
                 <i class="fa fa-shopping-basket" aria-hidden="true"></i>
@@ -505,12 +504,16 @@
 				<span class="home-product-item__sale-off-label">GIẢM</span>
 			</div>
 		</a>
-		<button id ="1" type="button" class="btn btn-cart id_product" onclick="click1()" >Thêm Vào Giỏ
+		<div type="button" id ="abc" class="btn btn-cart id_product" onclick="click1()" >Thêm Vào Giỏ
 			<script>
-				localStorage.setItem("id","1");
-				document.getElementsByClassName("id_product").innerHTML = localStorage.getItem("id");
+				function click1(){	
+					localStorage.setItem("id","1");
+					document.getElementsByClassName("id_product").innerHTML = localStorage.getItem("id");
+					items_list.push("1");
+					console.log(items_list);
+				}
 			</script>
-		</button>
+		</div>
 		
 	</div>
 			  
@@ -1212,8 +1215,8 @@
 
 		<!--end footer -->
 
-
-    <script src = "/assets/js/index.js"> </script>
 	<script src="/assets/js/checkOut.js"></script>
+    <!-- <script src = "/assets/js/index.js"> </script> -->
+	<script src="/assets/js/test.js"></script>
 	</body>
 	</html>
