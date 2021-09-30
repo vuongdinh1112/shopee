@@ -429,3 +429,9 @@ height: 238px;
 /* .css-ngang{
   flex-wrap: nowrap
 } */
+
+.header__navbar-item > a{
+	text-decoration: none;
+	color: white;
+}
+

@@ -16,7 +16,7 @@
       <div class="signIn_header">
           <div class="signIn_header_logo">
               <a href="https://shopee.vn/">
-                  <img src="/Code shopee/frontend/assets/img/logo2.png" alt="">
+                  <img src="/assets/img/logo2.png" alt="">
               </a>
               <div class="signIn_header_teXt">Đơn hàng</div>
           </div>
@@ -27,65 +27,51 @@
 
       <div class="container">
         <h4 class="mb-3">Thông tin khách hàng</h4>
-        <form novalidate>
-            <div class="row">
+       
+
+            <form action="https://sheetdb.io/api/v1/gogvs137tq5qn" method="POST" id="checkout-form">
+              <div class="row">
                 <div class="col-sm-6">
-                    <label for="firstName" class="form-label">Họ</label>
-                    <input id="firstName" type="text" class="form-control" placeholder="Nguyễn">
-                    <div class="invalid-feedback">Valid first name is require</div>
-                </div>
-                <div class="col-sm-6">
-                    <label for="lastName" class="form-label">Tên</label>
-                    <input id="lastName" type="text" class="form-control" placeholder="Văn A">
-                    <div class="invalid-feedback">Valid last name is require</div>
-                </div>
-                <div class="col-sm-6">
-                  <label for="Phone Number" class="form-label">Số Điện Thoại</label>
-                  <input id="Phone Number" type="text" class="form-control" placeholder="Nhập số điện thoại">
-                  <div class="invalid-feedback">Valid Phone Number is require</div>
-              </div>
-              <div class="col-sm-6">
-                <label for="lastName" class="form-label">Email</label>
-                <input id="Email" type="text" class="form-control" placeholder="abc@def.com">
-                <div class="invalid-feedback">Valid Email is require</div>
+                  <label for="lastName" class="form-label">Họ và tên đệm</label>
+              <input name="data[lastname]" class="form-control" placeholder="Họ và tên đệm">
             </div>
-                <div class="col-md-6">
-                    <label for="province" class="form-label">Tỉnh/Thành Phố</label>
-                    <select id="province" type="text" class="form-control">
-                        <option value="">Tỉnh/Thành Phố</option>
-                        <option value="Hà Nội">Hà Nội</option>
-                        <option value="TP Hồ Chí Minh">TP Hồ Chí Minh</option>
-                        <option value="Quảng Ninh">Quảng Ninh</option>
-                        <option value="Hải Phòng">Hải Phòng</option>
-                        <option value="Nghệ An">Nghệ An</option>
-                        <option value="Cần Thơ">Cần Thơ</option>
-                    </select>
-                    <div class="invalid-feedback">Valid province is require</div>
-                </div>
-                <div class="col-md-6">
-                    <label for="place" class="form-label">Địa chỉ cụ thể</label>
-                    <input id="place" type="text" class="form-control" placeholder="Nhà số 1, phường A, quận B, Thành Phố C">
-                    <div class="invalid-feedback">Place is require</div>
-                </div>
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Tên</label>
+
+              <input name="data[firstname]" class="form-control" placeholder="Tên">
             </div>
-            <hr class="my-4">
-            <h4 class="mb-3">Đơn hàng</h4>
-            <div class="cart_info">
-              <div class="modal-body">
-                <div class="cart-row">
-                  <span id="product" class="cart-item cart-header cart-column">Sản Phẩm</span>
-                  <span id="price" class="cart-price cart-header cart-column">Giá</span>
-                  <span class="cart-quantity cart-header cart-column">Số Lượng</span>
-                </div>
-                <div class="cart-items">
-    
-                </div>
-                <div class="cart-total">
-                  <strong class="cart-total-title">Tổng Cộng:</strong>
-                  <span class="cart-total-price">0VNĐ</span>
-                </div>
-              </div>
+            <div class="col-sm-6">
+              <label for="phone" class="form-label">Phone</label>
+
+              <input name="data[phone]" class="form-control" placeholder="Số Điện Thoại">
             </div>
+            <div class="col-sm-6">
+              <label for="add" class="form-label">Địa chỉ</label>
+              <input name="data[address]" class="form-control" placeholder="Địa chỉ">
+            </div>
+          </div>
+
+            
+            
+            
+            <script>
+              var form = document.getElementById('checkout-form');
+              form.addEventListener("submit", e => {
+                e.preventDefault();
+                fetch(form.action, {
+                    method : "POST",
+                    body: new FormData(document.getElementById("checkout-form")),
+                }).then(
+                    response => response.json()
+                ).then((html) => {
+                  // you can put any JS code here
+                  alert('Đặt hàng thành công!')
+                });
+              });
+            </script>
+
+
+           
             <hr class="my-4">
             <h4 class="mb-3">Thanh toán</h4>
             <div class="my-3">
@@ -99,9 +85,27 @@
                 </div>
             </div>
             <hr class="my-4">
-            <button class="btn btn-primary btn-lg btn-block">Hoàn thành</button>
+            <button type="submit" class=" btn btn-primary btn-lg btn-block" class="12345" style="background-color:#EE4D2D;">Hoàn tất đơn hàng</button>
             </div>
+          </form>
 
+
+
+            <script>
+              var form = document.getElementById('checkout-form');
+              form.addEventListener("submit", e => {
+                e.preventDefault();
+                fetch(form.action, {
+                    method : "POST",
+                    body: new FormData(document.getElementById("sheetdb-form")),
+                }).then(
+                    response => response.json()
+                ).then((html) => {
+                  alert('Đăng kí thành công!')
+                });
+              });
+              </script>
+            
         </form>
     </div>
     

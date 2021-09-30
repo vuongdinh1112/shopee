@@ -1,0 +1,721 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee</title>
+    <link rel="stylesheet" href="/assets/css/product.css">
+    <link rel="stylesheet" href="assets/css/plugin.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="assets/css/base.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/grid.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	<link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/assets/css/index.css">
+</head>
+<body>
+    
+            <!-- The Modal -->
+            <!-- <button id="cart">
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                Giỏ Hàng
+            </button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                        </div>
+                        <div class="cart-items">
+
+                        </div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">0VNĐ</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+            </div> -->
+
+
+
+	<div class="app">
+		<!-- header -->
+		<header class="header">
+			<div class="grid wide">
+
+				<!-- header navbar -->
+				<nav class="header__navbar hide-on-mobile-tablet">
+
+					<!-- header navbar left -->
+					<ul class="header__navbar-list">
+						<li class="header__navbar-item header__navbar-item-has-qr header__navbar-item--separate">
+							Vào cửa hàng trên ứng dụng CH Play
+							<div class="header__qr">
+								<img src="assets/img/qrcode.png" alt="QR code" class="header__qr-img">
+								<div class="header__qr-apps">
+									<a class="header__qr-link">
+										<img src="assets/img/ch_play.png" alt="CH Play" class="header__qr-download-img">
+									</a>
+									<a class="header__qr-link">
+										<img src="assets/img/apstore.png" alt="Apstore" class="header__qr-download-img">
+									</a>
+								</div>
+							</div>
+						</li>
+						<li class="header__navbar-item">
+							<span class="header__navbar-item-no-pointer">Kết nối</span>
+							<a href="#" class="header__navbar-icon-link">
+								<i class="header__navbar-icon fab fa-facebook"></i>
+							</a>
+							<a href="#" class="header__navbar-icon-link">
+								<i class="header__navbar-icon fab fa-instagram"></i>
+							</a>
+						</li>
+					</ul>
+					<!--rnd header navbar left -->
+
+					<!-- header navbar right -->
+					<ul class="header__navbar-list">
+						<li class="header__navbar-item header__navbar-item-has-notity">
+							<a href="#" class="header__navbar-item-link">
+								<i class="header__navbar-icon far fa-bell"></i>
+								Thông báo
+							</a>
+							<div class="header__notify">
+								<header class="header__notify-header">
+									<h3>Thông báo mới nhận</h3>
+								</header>
+								<ul class="header__notify-list">
+									<li class="header__notify-item header__notify-item-viewed">
+										<a href="#" class="header__notify-link">
+											<img src="assets/img/prd_img_3.jpg" alt="" class="header__notify-img">
+											<div class="header__notify-info">
+												<div class="header__notify-name">4 ký do bạn phải sử dụng kem chống nắng thường xuyên</div>
+												<div class="header__notify-descrition">Nhiều người vẫn cho rằng kem chống nắng chỉ sử dụng khi có ánh nắng mặt trời, còn khi thời tiết lạnh, râm</div>
+											</div>
+										</a>
+									</li>
+									<li class="header__notify-item">
+										<a href="#" class="header__notify-link">
+											<img src="assets/img/prd_img_2.jpg" alt="" class="header__notify-img">
+											<div class="header__notify-info">
+												<div class="header__notify-name">4 ký do bạn phải sử dụng kem chống nắng thường xuyên</div>
+												<div class="header__notify-descrition">Nhiều người vẫn cho rằng kem chống nắng chỉ sử dụng khi có ánh nắng mặt trời, còn khi thời tiết lạnh, râm</div>
+											</div>
+										</a>
+									</li>
+									<li class="header__notify-item header__notify-item-viewed">
+										<a href="#" class="header__notify-link">
+											<img src="assets/img/prd_img_4.jpg" alt="" class="header__notify-img">
+											<div class="header__notify-info">
+												<div class="header__notify-name">4 ký do bạn phải sử dụng kem chống nắng thường xuyên</div>
+												<div class="header__notify-descrition">Nhiều người vẫn cho rằng kem chống nắng chỉ sử dụng khi có ánh nắng mặt trời, còn khi thời tiết lạnh, râm</div>
+											</div>
+										</a>
+									</li>
+									<li class="header__notify-item">
+										<a href="#" class="header__notify-link">
+											<img src="assets/img/prd_img_8.jpg" alt="" class="header__notify-img">
+											<div class="header__notify-info">
+												<div class="header__notify-name">4 ký do bạn phải sử dụng kem chống nắng thường xuyên</div>
+												<div class="header__notify-descrition">Nhiều người vẫn cho rằng kem chống nắng chỉ sử dụng khi có ánh nắng mặt trời, còn khi thời tiết lạnh, râm</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+								<div class="header__notify-footer">
+									<a href="#" class="header__notity-footer-link">Xem tất cả</a>
+								</div>
+							</div>
+						</li>
+						<li class="header__navbar-item">
+							<a href="#" class="header__navbar-item-link">
+								<i class="header__navbar-icon far fa-question-circle"></i>
+								Trợ giúp
+							</a>
+						</li>	
+
+						<li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate" ><a href="/signup.html">Đăng kí</a></li>
+							<li class="header__navbar-item header__navbar-item--strong"> <a href="/signIn.html">Đăng nhập</a></li>
+
+							<!-- <li class="header__navbar-item header__navbar-user">
+								<img src="assets/img/avata.jpg" class="header__navbar-user-img">
+								<span class="header__navbar-user-name">Vương Duy Định</span>
+
+								<ul class="header__navbar-user-menu">
+									<li class="header__navbar-user-item">
+										<a href="#">Tài khoản của tôi</a>
+									</li>
+									<li class="header__navbar-user-item">
+										<a href="#">Địa chỉ của tôi</a>
+									</li>
+									<li class="header__navbar-user-item">
+										<a href="#">Đơn mua</a>
+									</li>
+									<li class="header__navbar-user-item header__navbar-user-item--separate">
+										<a href="#">Đăng xuất</a>
+									</li>
+								</ul>
+							</li>		
+						</ul> -->
+						<!--end header navbar right -->
+					</nav>
+
+					<!-- end header-navbar -->
+
+
+
+
+
+
+					<!-- header-search -->
+					<div class="header-with-search">
+						
+						<label for="header-bars-input" class="header__bars-btn">
+							<i class="fas fa-bars header__bars-icon"></i>
+						</label>
+						
+						<input type="checkbox" class="header__bars-input" id="header-bars-input">
+						<div class="header__mobile">
+							<!-- <div class="header__mobile-search-wrap">
+								<div class="header__mobile-search">
+									<input type="text" class="header__mobile-search-btn" placeholder="Tìm kiếm sản phẩm...">
+									<button class="header__search-moblie-btn">
+										<i class="fas fa-search header__search-mobile-btn-icon"></i>
+									</button>
+								</div>
+							</div> -->
+							<ul class="header__mobile-list">
+								<li class="header__mobile-item">
+									<a href="" class="header__mobile-link">Trang chủ</a>
+								</li>
+
+								<li class="header__mobile-item">
+									<a href="" class="header__mobile-link">Giỏ hàng</a>
+								</li>
+								
+								<li class="header__mobile-item">
+									<a href="" class="header__mobile-link">Đăng ký</a>
+								</li>
+
+								<li class="header__mobile-item">
+									
+									<a href="/signIn.html" target="_blank" class="header__mobile-link">Đăng nhập</a>
+									
+								</li>
+
+							</ul>
+							<label for="header-bars-input">
+								<i class="fas fa-times header__mobile-close"></i>
+							</label>
+							
+						</div>
+
+						<label for="header-bars-input" class="modal">
+							<div class="modal__overlay"></div>
+						</label>
+						<!-- logo -->
+						<div class="header__logo">
+							<a href="#" class="header__logo-link">
+								<img class="header__logo-img" src="assets/img/logo.png" alt="">
+							</a>
+						</div>
+
+						<!-- end logo -->
+
+						<!-- search -->
+						<div class="header__search hide-on-mobile">
+							<div class="header__search-input-wrap">
+								<input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm tại đây">
+
+								<div class="header__search-history">
+									<h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+									<ul class="header__search-history-list">
+										<li class="header__search-history-item">
+											<a href="#">Mũ bảo hiểm</a>
+										</li>
+										<li class="header__search-history-item">
+											<a href="#">Gang tay phượt</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="header__search-select">
+								<span class="header__search-select-label">
+									Trong shop
+								</span>
+								<i class="fas fa-chevron-down header__search-select-icon"></i>
+
+								<ul class="header__search-option">
+									<li class="header__search-option-item header__search-option-item--active">
+										<span>Trong shop</span>
+										<i class="fas fa-check "></i>
+									</li>
+
+									<li class="header__search-option-item">
+										<span>Ngoài shop</span>
+										<i class="fas fa-check "></i>
+									</li>
+								</ul>
+							</div>
+
+							<button class="header__search-btn">
+								<i class="fas fa-search header__search-btn-icon"></i>
+							</button>
+
+						</div>
+						<!--end search -->
+
+
+
+
+						<!-- cart -->
+						<button id="cart">
+							<i class="fa fa-shopping-basket" aria-hidden="true"></i>
+							
+						</button>
+						<div id="myModal" class="modal">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title">Giỏ Hàng</h5>
+									<span class="close">&times;</span>
+								</div>
+								<div class="modal-body">
+									<div class="cart-row">
+										<span class="cart-item cart-header cart-column">Sản Phẩm</span>
+										<span class="cart-price cart-header cart-column">Giá</span>
+										<span class="cart-quantity cart-header cart-column">Số Lượng</span>
+									</div>
+									<div class="cart-items">
+			
+									</div>
+									<div class="cart-total">
+										<strong class="cart-total-title">Tổng Cộng:</strong>
+										<span class="cart-total-price">0VNĐ</span>
+									</div>
+								</div>
+			
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary close-footer">Đóng</button>
+									<button type="button" class="btn btn-primary order"><a href="/checkOut.html">Thanh Toán</a></button>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</header>
+			
+
+
+
+
+
+
+
+
+
+                
+
+
+    <!--product details start-->
+    <div class="product_details">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-5">
+                   <div class="product-details-tab">
+
+                        <div id="img-1" class="zoomWrapper single-zoom">
+                            <a href="#">
+                                <img id="zoom1" class="img-prd " src="/assets/img/product5.jpg" data-zoom-image="assets/img/product/product5.jpg" alt="big-1">
+                            </a>
+                        </div>
+
+                        <div class="single-zoom-thumb">
+                            <ul class="s-tab-zoom owl-carousel single-product-active" id="gallery_01">
+                                <li>
+                                    <a href="#" class="elevatezoom-gallery active" data-update="" data-image="assets/img/product/product4.jpg" data-zoom-image="assets/img/product/product4.jpg">
+                                        <img src="/assets/img/product3.jpg" alt="zo-th-1"/>
+                                    </a>
+
+                                </li>
+                                <li >
+                                    <a href="#" class="elevatezoom-gallery active" data-update="" data-image="assets/img/product/product6.jpg" data-zoom-image="assets/img/product/product6.jpg">
+                                        <img src="/assets/img/product5.jpg" alt="zo-th-1"/>
+                                    </a>
+
+                                </li>
+                                <li >
+                                    <a href="#" class="elevatezoom-gallery active" data-update="" data-image="assets/img/product/product8.jpg" data-zoom-image="assets/img/product/product8.jpg">
+                                        <img src="/assets/img/product2.jpg" alt="zo-th-1"/>
+                                    </a>
+
+                                </li>
+                                <li >
+                                    <a href="#" class="elevatezoom-gallery active" data-update="" data-image="assets/img/product/product2.jpg" data-zoom-image="assets/img/product/product2.jpg">
+                                        <img src="/assets/img/product4.jpg" alt="zo-th-1"/>
+                                    </a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-7">
+                    <div class="product_d_right">
+                       <form action="#">
+                           
+                            <h1 class="content-product-h3">Amazon Cloud Cam</h1>
+                            <div class=" product_ratting">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
+                                    <li class="review"><a href="#"> 1 review </a></li>
+                                    <li class="review"><a href="#"> Write a review </a></li>
+                                </ul>
+                            </div>
+                            <div class="product_price">
+                                <span class="current_price price">70000VNĐ</span>
+                            </div>
+                            <div class="product_desc">
+                                <p>More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go. Cover Flow. Browse through your music collection by flipping through album art. Select an album to turn it over and see the track list. Enhanced interface. Experience a whole new way to browse and view your music and video. Sleeker design. Beautiful, durable, and sleeker than ever, iPod classic now features an anodized aluminum and polish.. </p>
+                            </div>
+
+                            <div class="product_variant color">
+                                <h3>color</h3>
+                                <select class="niceselect_option" id="color" name="produc_color">
+                                    <option selected value="1">choose in option</option>        
+                                    <option value="2">choose in option2</option>              
+                                    <option value="3">choose in option3</option>              
+                                    <option value="4">choose in option4</option>              
+                                </select>   
+                            </div>
+                            <div class="product_variant size">
+                                <h3>size</h3>
+                                <select class="niceselect_option" id="color1" name="produc_color">
+                                    <option selected value="1">size</option>        
+                                    <option value="2">x</option>              
+                                    <option value="2">xl</option>              
+                                    <option value="3">md</option>              
+                                    <option value="4">xxl</option>              
+                                    <option value="4">s</option>              
+                                </select> 
+                            </div>
+                            <div class="product_variant quantity">
+                                <!-- <label>quantity</label>
+                                <input min="1" max="100" value="1" type="number"> -->
+                                <button type="button" class="btn btn-cart img-prd" id="cart1" class="button" type="submit">ADD TO CART</button>  
+                            </div>
+
+
+
+
+
+
+					<!-- cart -->
+					
+						<div id="myModal" class="modal">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title">Giỏ Hàng</h5>
+									<span class="close">&times;</span>
+								</div>
+								<div class="modal-body">
+									<div class="cart-row">
+										<span class="cart-item cart-header cart-column">Sản Phẩm</span>
+										<span class="cart-price cart-header cart-column">Giá</span>
+										<span class="cart-quantity cart-header cart-column">Số Lượng</span>
+									</div>
+									<div class="cart-items">
+			
+									</div>
+									<div class="cart-total">
+										<strong class="cart-total-title">Tổng Cộng:</strong>
+										<span class="cart-total-price">0VNĐ</span>
+									</div>
+								</div>
+			
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary close-footer">Đóng</button>
+									<button type="button" class="btn btn-primary order" style="color: ><a href="/checkOut.html" >Thanh Toán</a></button>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</header>
+			
+
+
+
+
+
+
+
+
+
+                            
+                            <div class=" product_d_action">
+                               <ul>
+                                   <!-- <li><a href="#" title="Add to wishlist"><i class="fa fa-heart-o" aria-hidden="true"></i> Add to Wish List</a></li> -->
+                                   <!-- <li><a href="#" title="Add to Compare"><i class="fa fa-sliders" aria-hidden="true"></i> Compare this Product</a></li> -->
+                               </ul>
+                            </div>
+                            
+                        </form>
+                        <div class="priduct_social">
+                            <!-- <h3>Share on:</h3> -->
+                            <ul>
+                                <!-- <li><a href="#"><i class="fa fa-rss"></i></a></li>           
+                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>           
+                                <li><a href="#"><i class="fa fa-tumblr"></i></a></li>           
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>        
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>         -->
+                            </ul>      
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <!--product details end-->
+    
+    <!--product info start-->
+    <div class="product_d_info">
+        <div class="container">   
+            <div class="row">
+                <div class="col-12">
+                    <div class="product_d_inner">   
+                        <div class="product_info_button">    
+                            <ul class="nav" role="tablist">
+                                <li >
+                                    <a class="active" data-toggle="tab" href="#info" role="tab" aria-controls="info" aria-selected="false">More info</a>
+                                </li>
+                                <li>
+                                     <a data-toggle="tab" href="#sheet" role="tab" aria-controls="sheet" aria-selected="false">Data sheet</a>
+                                </li>
+                                <li>
+                                   <a data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">Reviews</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="info" role="tabpanel" >
+                                <div class="product_info_content">
+                                    <p>Fashion has been creating well-designed collections since 2010. The brand offers feminine designs delivering stylish separates and statement dresses which have since evolved into a full ready-to-wear collection in which every item is a vital part of a woman's wardrobe. The result? Cool, easy, chic looks with youthful elegance and unmistakable signature style. All the beautiful pieces are made in Italy and manufactured with the greatest attention. Now Fashion extends to a range of accessories including shoes, hats, belts and more!</p>
+                                </div>    
+                            </div>
+
+                            <div class="tab-pane fade" id="sheet" role="tabpanel" >
+                                <div class="product_d_table">
+                                   <form action="#">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="first_child">Compositions</td>
+                                                    <td>Polyester</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="first_child">Styles</td>
+                                                    <td>Girly</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="first_child">Properties</td>
+                                                    <td>Short Dress</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </form>
+                                </div>
+                                <div class="product_info_content">
+                                    <p>Fashion has been creating well-designed collections since 2010. The brand offers feminine designs delivering stylish separates and statement dresses which have since evolved into a full ready-to-wear collection in which every item is a vital part of a woman's wardrobe. The result? Cool, easy, chic looks with youthful elegance and unmistakable signature style. All the beautiful pieces are made in Italy and manufactured with the greatest attention. Now Fashion extends to a range of accessories including shoes, hats, belts and more!</p>
+                                </div>    
+                            </div>
+                            <div class="tab-pane fade" id="reviews" role="tabpanel" >
+                                <div class="product_info_content">
+                                    <p>Fashion has been creating well-designed collections since 2010. The brand offers feminine designs delivering stylish separates and statement dresses which have since evolved into a full ready-to-wear collection in which every item is a vital part of a woman's wardrobe. The result? Cool, easy, chic looks with youthful elegance and unmistakable signature style. All the beautiful pieces are made in Italy and manufactured with the greatest attention. Now Fashion extends to a range of accessories including shoes, hats, belts and more!</p>
+                                </div>
+                                <div class="product_info_inner">
+                                    <div class="product_ratting mb-10">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star"></i></a></li>
+                                        </ul>
+                                        <strong>Posthemes</strong> 
+                                        <p>09/07/2018</p>
+                                    </div>
+                                    <div class="product_demo">
+                                        <strong>demo</strong>
+                                        <p>That's OK!</p>
+                                    </div>
+                                </div> 
+                                <div class="product_review_form">
+                                    <form action="#">
+                                        <h2>Add a review </h2>
+                                        <p>Your email address will not be published. Required fields are marked </p>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <label for="review_comment">Your review </label>
+                                                <textarea name="comment" id="review_comment" ></textarea>
+                                            </div> 
+                                            <div class="col-lg-6 col-md-6">
+                                                <label for="author">Name</label>
+                                                <input id="author"  type="text">
+
+                                            </div> 
+                                            <div class="col-lg-6 col-md-6">
+                                                <label for="email">Email </label>
+                                                <input id="email"  type="text">
+                                            </div>  
+                                        </div>
+                                        <button type="submit">Submit</button>
+                                     </form>   
+                                </div>     
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+        </div>    
+    </div>  
+    <!--product info end-->
+  
+<!-- JS
+============================================ -->
+
+<!-- Plugins JS -->
+<script src="/assets/js/plugin.js"></script>
+
+<!-- Main JS -->
+<script src="/assets/js/main.js"></script>
+
+
+
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="grid wide">
+				<div class="grid__row">
+					<div class="col l-2-4 m-4 c-6">
+						<h3 class="footer__heading">Chăm sóc khách hàng</h3>
+						<ul class="footer-list">
+							<li class="footer-item">
+								<a href="#" class="footer-item__link">Trung tâm trợ giúp</a>
+							</li>
+							<li class="footer-item">
+								<a href="#" class="footer-item__link">Shopee Mall</a>
+							</li>
+							<li class="footer-item">
+								<a href="#" class="footer-item__link">Hướng dẫn mua hàng</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col l-2-4 m-4 c-6">
+						<h3 class="footer__heading">Giới thiệu</h3>
+						<ul class="footer-list">
+							<li class="footer-item">
+								<a href="#" class="footer-item__link">Giới thiệu</a>
+							</li>
+							<li class="footer-item">
+								<a href="#" class="footer-item__link">Tuyển dụng</a>
+							</li>
+							<li class="footer-item">
+								<a href="#" class="footer-item__link">Điều khoản</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col l-2-4 m-4 c-6">
+						<h3 class="footer__heading">Theo dõi</h3>
+						<ul class="footer-list">
+							<li class="footer-item">
+								<a href="#" class="footer-item__link">
+									<i class="fab fa-facebook footer-item__icon"></i>
+									Facebook
+								</a>
+							</li>
+							<li class="footer-item">
+								<a href="#" class="footer-item__link">
+									<i class="fab fa-instagram footer-item__icon"></i>
+									Instagram
+								</a>
+							</li>
+							<li class="footer-item">
+								<a href="#" class="footer-item__link">
+									<i class="fab fa-linkedin footer-item__icon"></i>
+								Linkedin</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col l-2-4 m-4 c-6">
+						<h3 class="footer__heading">Danh mục</h3>
+						<ul class="footer-list">
+							<li class="footer-item">
+								<a href="#" class="footer-item__link">Mũ bảo hiểm</a>
+							</li>
+							<li class="footer-item">
+								<a href="#" class="footer-item__link">Phụ kiện phượt</a>
+							</li>
+							<li class="footer-item">
+								<a href="#" class="footer-item__link">Đồ bảo hộ</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col l-2-4 m-8 c-6">
+						<h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
+						<div class="footer__download">
+							<img src="assets/img/qrcode.png" class="footer__download-qr">
+							<div class="footer__download-apps">
+								<a href="#" class="footer__download-app-link">
+									<img src="assets/img/ch_play.png" class="footer__download-app-img">
+								</a>
+
+								<a href="#" class="footer__download-app-link">
+									<img src="assets/img/apstore.png" class="footer__download-app-img">
+								</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="grid wide">
+					<p class="footer__text">@2020 - Bản quyền thuộc về Công ty Shopee</p>
+				</div>
+			</div>
+		</footer>
+
+		<!--end footer -->
+
+
+    <script src = "/assets/js/index.js"> </script>
+	<script src="/assets/js/checkOut.js"></script>
+	</body>
+	</html>
+
+
+</body>
+
+</html>
+
+</body>
+</html>
