@@ -135,6 +135,3 @@ function addItemToCart(title, price, img) {
     updatecart()
   })
 }
-
-
-
